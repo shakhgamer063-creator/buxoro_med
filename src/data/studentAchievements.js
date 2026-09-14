@@ -1,0 +1,51 @@
+// Kelajakda admin panel orqali boshqarish uchun — har bir yozuv mustaqil obyekt.
+export const STUDENT_ACHIEVEMENTS = [
+  {
+    id: "ach1",
+    name: "Muhammad Ali",
+    course: "IELTS",
+    result: "IELTS 7.5",
+    place: "TATU talabasi",
+    note: "Ikki yil davomida barqaror mashq qilib, maqsadli balidan ham yuqori natijaga erishdi.",
+  },
+  {
+    id: "ach2",
+    name: "Madina Karimova",
+    course: "Matematika",
+    result: "95% natija",
+    place: "Universitet talabasi",
+    note: "DTM'da yuqori ball to'plab, orzu qilgan yo'nalishiga kirdi.",
+  },
+  {
+    id: "ach3",
+    name: "Sardor Rustamov",
+    course: "IELTS",
+    result: "IELTS 7.0",
+    place: "INHA universiteti talabasi",
+    note: "Boshlang'ich darajadan boshlab 8 oyda xalqaro grant olishga yetdi.",
+  },
+  {
+    id: "ach4",
+    name: "Dilnoza Yoqubova",
+    course: "Matematika",
+    result: "94% natija",
+    place: "Prezident maktabi bitiruvchisi",
+    note: "Respublika olimpiadasida ishtirok etib, markaz nomidan sovrin oldi.",
+  },
+  {
+    id: "ach5",
+    name: "Azizbek Hasanov",
+    course: "Ingliz tili",
+    result: "CEFR C1",
+    place: "WIUT talabasi",
+    note: "Ingliz tilida erkin so'zlashish darajasiga yetib, xalqaro dasturga qabul qilindi.",
+  },
+  {
+    id: "ach6",
+    name: "Kamola Nosirova",
+    course: "IT — Dasturlash",
+    result: "Portfolio loyihasi",
+    place: "IT kompaniyasida stajyor",
+    note: "Kursda yaratgan loyihasi bilan ilk ish tajribasini boshladi.",
+  },
+];

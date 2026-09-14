@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+h1, h2, h3, .display {
+  font-family: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Filter chip qatorlari uchun scrollbar yashirish (mobil) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Hero uchun yengil kirish animatsiyasi */
+@keyframes heroIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-hero-in {
+  animation: heroIn 0.8s ease-out both;
+}
+
+/* Scroll-reveal: Reveal komponenti shu klasslardan foydalanadi */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Modal ochilish animatsiyalari */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes modalIn {
+  from { opacity: 0; transform: translateY(24px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Foydalanuvchi animatsiyalarni kamaytirishni tanlagan bo'lsa — hurmat qilamiz */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal, .animate-hero-in {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
